@@ -59,7 +59,31 @@ Country: Country name. Nominal, the name of the country where each customer resi
 In the dataframe, products are uniquely identified through the StockCode variable. A shrort description of the products is given in the Description variable. In this section, I intend to use the content of this latter variable in order to group the products into different categories.
 
 <h2>Classification of customers</h2>
-In this part, the objective will be to adjust a classifier that will classify consumers in the different client categories that were established in the previous section. The objective is to make this classification possible at the first visit. To fulfill this objective, I will test several classifiers implemented in scikit-learn. First, in order to simplify their use, I define a class that allows to interface several of the functionalities common to these different classifiers
+In this part, the objective will be to adjust a classifier that will classify consumers in the different client categories that were established in the previous section. The objective is to make this classification possible at the first visit. To fulfill this objective, I will test several classifiers implemented in scikit-learn. First, in order to simplify their use, I define a class that allows to interface several of the functionalities common to these different classifiers.
+
+
+<h3>Prediction accuracys</h3>
+```
+______________________________ 
+Support Vector Machine
+Precision: 65.93 % 
+______________________________ 
+Logostic Regression
+Precision: 71.34 % 
+______________________________ 
+k-Nearest Neighbors
+Precision: 67.58 % 
+______________________________ 
+Decision Tree
+Precision: 71.38 % 
+______________________________ 
+Random Forest
+Precision: 75.38 % 
+______________________________ 
+Gradient Boosting
+Precision: 75.23 % 
+
+```
 
 <h2>Testing predictions</h2>
 In the previous section, a few classifiers were trained in order to categorize customers. Until that point, the whole analysis was based on the data of the first 10 months. In this section, I test the model the last two months of the dataset, that has been stored in the set_test dataframe
