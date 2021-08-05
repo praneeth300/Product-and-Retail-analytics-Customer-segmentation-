@@ -63,27 +63,25 @@ In this part, the objective will be to adjust a classifier that will classify co
 
 
 <h3>Prediction accuracys</h3>
-```
-______________________________ 
+
 Support Vector Machine
 Precision: 65.93 % 
-______________________________ 
+
 Logostic Regression
 Precision: 71.34 % 
-______________________________ 
+
 k-Nearest Neighbors
 Precision: 67.58 % 
-______________________________ 
+
 Decision Tree
 Precision: 71.38 % 
-______________________________ 
+
 Random Forest
 Precision: 75.38 % 
-______________________________ 
+
 Gradient Boosting
 Precision: 75.23 % 
 
-```
 
 <h2>Testing predictions</h2>
 In the previous section, a few classifiers were trained in order to categorize customers. Until that point, the whole analysis was based on the data of the first 10 months. In this section, I test the model the last two months of the dataset, that has been stored in the set_test dataframe
